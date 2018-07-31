@@ -1,4 +1,4 @@
-package com.aigestudio.wheelpicker.core;
+package org.vispo.wheelpicker.core;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -16,7 +16,7 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.animation.DecelerateInterpolator;
 
-import com.aigestudio.wheelpicker.R;
+import org.vispo.wheelpicker.R;
 
 import java.util.Arrays;
 import java.util.List;

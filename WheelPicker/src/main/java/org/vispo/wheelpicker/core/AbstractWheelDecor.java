@@ -1,4 +1,4 @@
-package com.aigestudio.wheelpicker.core;
+package org.vispo.wheelpicker.core;
 
 import android.graphics.Canvas;
 import android.graphics.Paint;

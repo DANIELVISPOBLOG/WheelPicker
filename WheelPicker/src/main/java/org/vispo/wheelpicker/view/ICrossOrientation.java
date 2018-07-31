@@ -1,4 +1,4 @@
-package com.aigestudio.wheelpicker.view;
+package org.vispo.wheelpicker.view;
 
 import android.graphics.Camera;
 import android.graphics.Canvas;
@@ -7,7 +7,7 @@ import android.graphics.Rect;
 import android.text.TextPaint;
 import android.view.VelocityTracker;
 
-import com.aigestudio.wheelpicker.core.WheelScroller;
+import org.vispo.wheelpicker.core.WheelScroller;
 
 interface ICrossOrientation {
 

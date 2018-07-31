@@ -1,4 +1,4 @@
-package com.aigestudio.wheelpicker.view;
+package org.vispo.wheelpicker.view;
 
 import android.content.Context;
 import android.graphics.Camera;

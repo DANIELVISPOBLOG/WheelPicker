@@ -1,4 +1,4 @@
-package com.aigestudio.wheelpicker.core;
+package org.vispo.wheelpicker.core;
 
 public interface WheelScroller {
     void abortAnimation();

@@ -1,4 +1,4 @@
-package com.aigestudio.wheelpicker.demo;
+package org.vispo.wheelpicker.demo;
 
 import android.app.Activity;
 import android.graphics.Canvas;
@@ -9,9 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.aigestudio.wheelpicker.core.AbstractWheelDecor;
-import com.aigestudio.wheelpicker.core.AbstractWheelPicker;
-import com.aigestudio.wheelpicker.view.WheelCrossPicker;
+import org.vispo.wheelpicker.core.AbstractWheelDecor;
+import org.vispo.wheelpicker.core.AbstractWheelPicker;
+import org.vispo.wheelpicker.view.WheelCrossPicker;
 
 import java.util.ArrayList;
 import java.util.List;

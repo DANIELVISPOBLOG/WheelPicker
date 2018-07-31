@@ -1,11 +1,11 @@
-package com.aigestudio.wheelpicker.view;
+package org.vispo.wheelpicker.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-import com.aigestudio.wheelpicker.core.AbstractWheelPicker;
+import org.vispo.wheelpicker.core.AbstractWheelPicker;
 
 /**
  * 圆形滚动选择器
