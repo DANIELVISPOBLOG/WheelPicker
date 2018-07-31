@@ -77,6 +77,14 @@ public interface IWheelPicker {
     void setTextSize(int size);
 
     /**
+     * Get text alignment
+     *
+     * @param align (CENTER, LEFT, RIGHT)
+     *
+     */
+     void setTextAlign(String align);
+
+    /**
      * 清除缓存
      * 在某些子类实现中为了加速绘制减少性能损耗会将一些计算结果进行缓存，当影响这些计算结果的参数发生改变时需要清除这些缓存并重建
      * Clear calculate cache
