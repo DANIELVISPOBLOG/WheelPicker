@@ -48,7 +48,7 @@ public abstract class AbstractWheelPicker extends View implements IWheelPicker {
     protected int itemSpace;
     protected int textSize;
     protected int textColor;
-    protected String textAlign;
+    protected Paint.Align textAlign;
     protected int curTextColor;
     protected int maxTextWidth, maxTextHeight;
     protected int wheelContentWidth, wheelContentHeight;
@@ -134,7 +134,7 @@ public abstract class AbstractWheelPicker extends View implements IWheelPicker {
             textSize = a.getDimensionPixelSize(
                     R.styleable.AbstractWheelPicker_wheel_text_size, defTextSize);
 
-            textAlign = "CENTER";
+            textAlign = Paint.Align.CENTER;
 
             textColor = a.getColor(R.styleable.AbstractWheelPicker_wheel_text_color, defTextColor);
 
@@ -240,8 +240,8 @@ public abstract class AbstractWheelPicker extends View implements IWheelPicker {
 
         int xPos = getPaddingLeft();
         int rightPos = w - getPaddingRight();
-        if (textAlign == "LEFT") xPos -= w;
-        if (textAlign == "RIGHT") rightPos = w * 2;
+        if (textAlign == Paint.Align.LEFT) xPos -= w;
+        if (textAlign == Paint.Align.RIGHT) rightPos = w * 2;
         mDrawBound.set(xPos, getPaddingTop(), rightPos,
                 h - getPaddingBottom());
 
@@ -399,21 +399,18 @@ public abstract class AbstractWheelPicker extends View implements IWheelPicker {
     public void setTextAlign(String align) {
         switch (align) {
             case "CENTER":
-                textAlign = align;
-                mTextPaint.setTextAlign(Paint.Align.CENTER);
+                textAlign = Paint.Align.CENTER;
                 break;
             case "LEFT":
-                textAlign = align;
-                mTextPaint.setTextAlign(Paint.Align.LEFT);
+                textAlign = Paint.Align.LEFT;
                 break;
             case "RIGHT":
-                textAlign = align;
-                mTextPaint.setTextAlign(Paint.Align.RIGHT);
+                textAlign = Paint.Align.RIGHT;
                 break;
             default:
-                textAlign = align;
-                mTextPaint.setTextAlign(Paint.Align.CENTER);
+                textAlign = Paint.Align.CENTER;
         }
+        mTextPaint.setTextAlign(textAlign);
         computeWheelSizes();
         requestLayout();
     }
